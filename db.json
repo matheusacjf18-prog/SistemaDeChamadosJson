@@ -1,0 +1,32 @@
+{
+  "clientes": [
+    {
+      "nome": "teste01",
+      "email": "teste01@rmtechnologies.com.br",
+      "telefone": "(32) 99828-2831",
+      "id": "3emGJj-Ssa4"
+    },
+    {
+      "nome": "teste02",
+      "email": "teste02@rmtechnologies.com.br",
+      "telefone": "(32) 99821-2831",
+      "id": "J9yA_3n58so"
+    },
+    {
+      "nome": "teste03",
+      "email": "teste03@rmtechnologies.com.br",
+      "telefone": "(32) 99834-5090",
+      "id": "HRhreD3zpP8"
+    }
+  ],
+  "avisos": [
+    {
+      "id": "1",
+      "titulo": "Bem-vindo",
+      "mensagem": "Este é o seu mural de avisos.",
+      "autor": "Sistema",
+      "data": "2026-06-08T10:00:00.000Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
