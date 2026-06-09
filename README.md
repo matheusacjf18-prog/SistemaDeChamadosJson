@@ -1,65 +1,43 @@
-# 🛠️ Sistema de Chamados - RM Technologies
+#  Sistema de Chamados - RM Technologies
 
-Projeto desenvolvido para fins acadêmicos na **UniAcademia** (3º período de Sistemas de Informação). O sistema permite a abertura e gestão de chamados técnicos, integrado a um banco de dados SQLite e serviço de e-mail.
+Projeto desenvolvido para fins acadêmicos na **UniAcademia** (3º período de Sistemas de Informação). O sistema permite a gestão de clientes e um mural de avisos, utilizando uma interface moderna e responsiva.
 
-## 💻 Tecnologias Utilizadas
-* **Frontend:** React 19, Vite, Bootstrap, React Router
-* **Backend:** Node.js, SQLite3
-* **Integrações:** API Resend (para notificações via e-mail)
-
----
-
-## � Como Executar o Projeto
-
-Este projeto é dividido em **Backend** (API) e **Frontend** (Interface Web). Siga os passos abaixo para rodar o ambiente completo localmente.
-
-### 1. Pré-requisitos
-Certifique-se de ter as seguintes ferramentas instaladas:
-* [Node.js](https://nodejs.org/) (recomendado LTS)
-* Gerenciador de pacotes `npm` ou `yarn`
+##  Tecnologias Utilizadas
+* **Frontend:** React 19, Vite, Bootstrap 5, React Router Dom
+* **Backend Simulador (API Falsa):** JSON Server
+* **Estilização:** CSS Customizado (Glassmorphism) + Bootstrap Icons
 
 ---
 
-### 2. Configuração do Backend
+##  Como Executar o Projeto Localmente
 
-O backend utiliza **SQLite** (banco de dados local em arquivo) e não requer instalação de servidor SQL externo. O banco será inicializado automaticamente através do script `db/database.sql` na primeira execução.
+O projeto utiliza uma arquitetura simplificada onde o `json-server` atua como uma API REST baseada no arquivo `db.json`.
 
-1. Abra o terminal e navegue para a pasta do backend:
+### Pré-requisitos
+Certifique-se de ter instalado em sua máquina:
+* [Node.js](https://nodejs.org/) (recomendado versão LTS)
+
+### Passo a Passo
+
+1. **Clone o repositório e acesse a pasta:**
    ```bash
-   cd backend
-   ```
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-3. Certifique-se de que o arquivo `.env` está presente na raiz da pasta `backend` com as chaves necessárias.
-4. Inicie o servidor:
-   ```bash
-   node src/server.js
-   ```
+   git clone [https://github.com/SEU-USUARIO/sistema-de-chamados.git](https://github.com/SEU-USUARIO/sistema-de-chamados.git)
+   cd sistema-de-chamados
+Instale as dependências:
 
----
+Bash
+npm install
+Inicie o projeto (API Fake + Frontend):
+Execute o comando abaixo. Ele iniciará o json-server na porta 5000 e o servidor do Vite simultaneamente:
 
-### 3. Configuração do Frontend
+Bash
+npm start
+Acesse no navegador:
+O terminal fornecerá o link local (geralmente http://localhost:5173).
 
-O frontend foi desenvolvido utilizando React e Vite.
+Login de teste Admin: Usuário: admin | Senha: 123456
 
-1. Abra um **novo terminal** e navegue para a pasta do frontend:
-   ```bash
-   cd frontend
-   ```
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-3. Inicie a interface:
-   ```bash
-   npm run dev
-   ```
-4. O terminal fornecerá um link (ex: `http://localhost:5173`). Abra-o no seu navegador.
+👥 Desenvolvedores
+Matheus Alves de Castro - Co-fundador da RM Technologies.
 
----
-
-## 👥 Desenvolvedores
-* **Matheus Alves de Castro** - Co-fundador da RM Technologies.
-* **Rafael Rangel** - Co-fundador da RM Technologies.
+Rafael Rangel - Co-fundador da RM Technologies.
